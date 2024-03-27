@@ -8,7 +8,8 @@
 </head>
 <body>
     <section class="left-section">
-        <img src="images/background.jpg" class="left-section-background">
+        <div class="logo"><img src="images/odin-lined.png">ODIN</div>
+        <div class="left-section-background">
     </section>
     <section class="right-section">
         <div class="right-non-form">
@@ -16,41 +17,48 @@
         </h1>
     </div>
         <form method="get" action="/">
-            <div class="form-class">
-            <h2>Let's do this!</h2>
-                <ul>
 
+            <div class="form-class">
+                <h2>Let's do this!</h2>
+
+                <ul>
+                    <div class="form-row">
             <li>
-                <label for="first-name">First name</label>
+                <label for="first-name">First name</label><br>
                 <input type="text" name="first-name" id="first-name">
             </li>
 
             <li>
-                <label for="last-name">Last name</label>
+                <label for="last-name">Last name</label><br>
                 <input type="text" name="last-name" id="last-name">
             </li>
+        </div>
+        <div class="form-row">
 
             <li>
-                <label for="email">Email</label>
+                <label for="email">Email</label><br>
                 <input type="email" name="email" id="email">
             </li>
 
             <li>
-                <label for="phone-number">Phone number</label>
+                <label for="phone-number">Phone number</label><br>
                 <input type="tel" name="phone-number" id="phone-number">
             </li>
+        </div>
+        <div class="form-row">
 
             <li>
-                <label for="password">Password</label>
+                <label for="password">Password</label><br>
                 <input type="password" name="password" id="password">
             </li>
 
             <li>
-                <label for="confirm-password">Confirm password</label>
+                <label for="confirm-password">Confirm password</label><br>
                 <input type="password" name="confirm-password" id="confirm-password">
             </li>
+            </div>
         </ul>
-
+    </div>
         </div>
         <div class="right-non-form">
             <button type="submit">Create account</button>

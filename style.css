@@ -17,6 +17,8 @@ body {
 
 .left-section {
     flex: 1;
+    position: relative;
+    width: 100%;
 }
 
 .left-section-background {
@@ -25,6 +27,7 @@ body {
     background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .logo {
@@ -35,6 +38,13 @@ body {
    font-size: 6rem;
    display: flex;
    height: 120px;
+   position: absolute;
+   margin: 100px 0 0 0;
+   padding: 10px;
+   z-index: 1;
+   left: 0;
+   right: 0;
+   justify-content: center;
 }
 
 .logo img {
@@ -55,12 +65,17 @@ body {
 .form-class {
     background-color: white;
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px 50px 20px 20px;
+    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .form-class ul {
     width: 70%;
+}
+
+.form-class h2 {
+    padding-left: 40px;
 }
 
 .form-row {
@@ -89,6 +104,12 @@ input {
 input:invalid{
     border-color: red;
 }
+input:invalid + .error-message-password,
+input:invalid + .error-message-phone,
+input:invalid + .error-message-email {
+    display: block;
+}
+
 
 input:focus {
     box-shadow: rgba(182, 213, 245, 0.1) 0 6px 0;
@@ -120,4 +141,12 @@ a {
     text-decoration: none;
     color: grey;
     font-weight: bold;
+}
+
+.error-message-password,
+.error-message-phone,
+.error-message-email {
+    display: none;
+    color: red;
+    font-size: 0.6rem;
 }

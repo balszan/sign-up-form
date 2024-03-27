@@ -30,34 +30,40 @@
 
             <li>
                 <label for="last-name">Last name</label><br>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" >
             </li>
         </div>
         <div class="form-row">
 
             <li>
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" >
+                <p class="error-message-password">Invalid email</p>
+
             </li>
 
             <li>
                 <label for="phone-number">Phone number</label><br>
-                <input type="tel" name="phone-number" id="phone-number">
+                <input type="tel" name="phone-number" id="phone-number" pattern="\+44\s?(\d\s?){9,10}|\(?\d{2,5}\)?\s?(\d\s?){5,6}" >
+                <p class="error-message-phone">Not a valid UK phone number</p>
+
             </li>
         </div>
         <div class="form-row">
 
             <li>
                 <label for="password">Password</label><br>
-                <input type="password" name="password" id="password">
-            </li>
+                <input type="password" name="password" id="password" pattern="^(?=.*[^A-Za-z])[A-Za-z\d@$!%*?&]{8,}$">
+                <p class="error-message-password">Your password must be at least 8 characters long and include at least one number or special character</p>
 
+            </li>
             <li>
                 <label for="confirm-password">Confirm password</label><br>
                 <input type="password" name="confirm-password" id="confirm-password">
             </li>
             </div>
         </ul>
+       
     </div>
         </div>
         <div class="right-non-form">

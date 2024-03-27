@@ -1,0 +1,48 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.right-section {
+    flex: 2;
+    
+}
+
+.right-section h1 {
+    font-family: 'Norse-Bold';
+    src: url('/Norse-Bold.otf') format('opentype');
+    font-size: 1.5rem;
+    padding: 50px 0 0 0;
+}
+
+.form-class {
+    background-color: white;
+    width: 100%;
+    padding: 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-class li {
+    list-style-type: none;
+}
+
+.right-non-form {
+    padding: 20px 50px;
+}
+
+.right-non-form h1 {
+    padding-top: 50px;
+}
